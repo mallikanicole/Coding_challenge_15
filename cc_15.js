@@ -44,6 +44,7 @@ function highlightHighPriorityTickets(){
 }
 addRiskItem("Cybersecurity Threat", "High", "IT");
 addRiskItem("HR Compliance Issue", "Low", "Human Resources");
+highlightHighPriorityTickets()
 
 //Task 2
 addRiskItem("Data Breach", "High", "IT");
