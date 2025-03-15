@@ -35,8 +35,7 @@ function addRiskItem(riskName, riskLevel, department) {
     card.appendChild(riskLabel);
     card.appendChild(resolveButton);
 
-    riskLabel.appendChild(card);
-
+    
     //Task 6
     ticketSection.addEventListener("click"), function() {
         console.log("Ticket section clicked");
