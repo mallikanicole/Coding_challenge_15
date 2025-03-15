@@ -14,6 +14,10 @@ function addRiskItem(riskName, riskLevel, department) {
 
     if (riskLevel.toLowerCase() === "high") {
         ticket.classList.add("high-priority");
+    document.getElementById('addTicketBtn').addEventListener('click', () => {
+        const currentTicket = addRiskItem("Data Breach", "High", "IT");
+        styleSingleCard(currentTicket);
+    })
     }
 //Task 3
     const resolveButton = document.createElement("button");
