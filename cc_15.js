@@ -1,7 +1,7 @@
 //Task 2
 function addRiskItem(riskName, riskLevel, department) {
     const card = document.createElement("div");
-    ticket.classList.add("risk-card");
+    
     const riskitem = document.createElement('div');
     ticketCard.setAttribute('class','risk-card');
 
