@@ -27,15 +27,15 @@ function addRiskItem(riskName, riskLevel, department) {
     resolveButton.textContent = "Resolve";
     resolveButton.classList.add("resolve-button");
     resolveButton.addEventListener("click", function () {
-        ticketContainer.removeChild(ticket);
+        card.removeChild(ticket);
     });
 
-    ticket.appendChild(nameHeading);
-    ticket.appendChild(issueParagraph);
-    ticket.appendChild(riskLabel);
-    ticket.appendChild(resolveButton);
+    card.appendChild(nameHeading);
+    card.appendChild(issueParagraph);
+    card.appendChild(riskLabel);
+    card.appendChild(resolveButton);
 
-    ticketContainer.appendChild(ticket);
+    riskLabel.appendChild(card);
 
     //Task 6
     ticketSection.addEventListener("click"), function() {
