@@ -34,6 +34,16 @@ function addRiskItem(riskName, riskLevel, department) {
     ticket.appendChild(resolveButton);
 
     ticketContainer.appendChild(ticket);
+
+    //Task 6
+    ticketSection.addEventListener("click"), function() {
+        console.log("Ticket section clicked");
+         document.querySelectorAll(".customer-card").forEach(card => {
+        card.addEventListener("click", function(event) {
+        console.log("Customer card clicked");
+         event.stopPropagation(); 
+    })});    
+    }
 }
 
 //Task 4
