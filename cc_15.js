@@ -41,7 +41,17 @@ function addRiskItem(riskName, riskLevel, department) {
 function highlightHighPriorityTickets(){
     //Selecting all the support tickets currently on the page
     const highPriorityTickets = document.querySelectorAll('.ticket-card');
+
+    //Task 5
+    const increaseRiskButon= document.createElement("button");
+    increaseRiskButon.textContent="Increase Risk";
+    increaseRiskButon.classList.add("increase-risk");
+    increaseRiskButon.addEventListener("click",function(){
+        ticketContainer.highlightHighPriorityTickets(ticket);
+    })
 }
+addRiskItem("Employee Retention", "Low", "HR");
+
 addRiskItem("Cybersecurity Threat", "High", "IT");
 addRiskItem("HR Compliance Issue", "Low", "Human Resources");
 highlightHighPriorityTickets()
