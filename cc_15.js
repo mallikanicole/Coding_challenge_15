@@ -57,7 +57,7 @@ function highlightHighPriorityTickets(){
     increaseRiskButon.textContent="Increase Risk";
     increaseRiskButon.classList.add("increase-risk");
     increaseRiskButon.addEventListener("click",function(){
-        ticketContainer.highlightHighPriorityTickets(ticket);
+        ticketContainer.highlightHighPriorityTickets(riskitem);
     })
 }
 addRiskItem("Employee Retention", "Low", "HR");
