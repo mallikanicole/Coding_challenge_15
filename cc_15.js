@@ -37,9 +37,8 @@ function addRiskItem(riskName, riskLevel, department) {
 
     
     //Task 6
-    const cardSection=card
+    
     cardSection.addEventListener("click"), function() {
-        console.log("Ticket section clicked");
          document.querySelectorAll(".risk-card").forEach(card => {
         card.addEventListener("click", function(event) {
         console.log("Risk card clicked");
