@@ -15,7 +15,7 @@ function addRiskItem(riskName, riskLevel, department) {
     if (riskLevel.toLowerCase() === "high") {
         ticket.classList.add("high-priority");
     }
-
+//Task 3
     const resolveButton = document.createElement("button");
     resolveButton.textContent = "Resolve";
     resolveButton.classList.add("resolve-button");
@@ -33,3 +33,8 @@ function addRiskItem(riskName, riskLevel, department) {
 
 addRiskItem("Data Breach", "High", "IT");
 addRiskItem("Supply Chain Disruption", "Medium", "Operations");
+
+//Task3
+
+addRiskItem("Market Fluctuations", "High", "Finance");
+// Clicking "Resolve" should remove this risk from the dashboard.
