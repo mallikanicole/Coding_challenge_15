@@ -12,6 +12,7 @@ function addRiskItem(riskName, riskLevel, department) {
     const riskLabel = document.createElement("span");
     riskLabel.textContent = `Priority: ${riskLevel}`;
 
+
     if (riskLevel.toLowerCase() === "high") {
         ticket.classList.add("high-priority");
     document.getElementById('addTicketBtn').addEventListener('click', () => {
@@ -35,6 +36,16 @@ function addRiskItem(riskName, riskLevel, department) {
     ticketContainer.appendChild(ticket);
 }
 
+//Task 4
+
+function highlightHighPriorityTickets(){
+    //Selecting all the support tickets currently on the page
+    const highPriorityTickets = document.querySelectorAll('.ticket-card');
+}
+addRiskItem("Cybersecurity Threat", "High", "IT");
+addRiskItem("HR Compliance Issue", "Low", "Human Resources");
+
+//Task 2
 addRiskItem("Data Breach", "High", "IT");
 addRiskItem("Supply Chain Disruption", "Medium", "Operations");
 
